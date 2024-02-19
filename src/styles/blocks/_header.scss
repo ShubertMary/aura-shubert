@@ -1,0 +1,44 @@
+header {
+    position: fixed;
+    width: 100%;
+    background-color: inherit;
+    padding: 15px 0;
+}
+
+
+.header-wrap {
+    display: flex;
+    align-items: center;
+    
+}
+
+.header__logo {
+    display: block;
+    height: 40px;
+    width: 100px;
+    margin-right: 64px;
+}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+    margin: 0 -16px;
+}
+
+.nav__item {
+    margin: 0 16px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.header__btn {
+    margin: 0 0 0 auto;
+    padding: 17px 32px;
+    border: none;
+    border-radius: 50px;
+    background-color: $color-dark;
+    color: $color-light;
+    font-family: $font;
+    font-size: 16px;
+    font-weight: 700;
+}

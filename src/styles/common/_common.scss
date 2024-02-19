@@ -6,7 +6,7 @@
 
 body {
     font-family: $font;
-    background-color: $color-red;
+    background-color: $color-light;
 }
   
 img {
@@ -16,8 +16,15 @@ img {
   
 a {
     text-decoration: none;
+    color: $color-dark;
 }
   
 ul {
     list-style: none;
+}
+
+.container {
+    width: 1280px;
+    margin: 0 auto;
+    border: 1px solid red;
 }
