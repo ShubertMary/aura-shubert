@@ -1,0 +1,32 @@
+.bet{
+    padding-bottom: 0;
+}
+
+.bet__title {
+    @include text_title;
+    display: flex;
+    align-items: center;
+}
+
+.bet__state::before {
+    content: "";
+    border-radius: 50%;
+    margin-right: 5px;
+    width: 6px;
+    height: 6px;
+    background-color: $color-red;
+}
+
+.bet__state {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 13px 8px 13px;
+    margin-left: 16px;
+    color: $color-red;
+    font-family: $font;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    border: 2px solid;
+    border-radius: 40px;
+}

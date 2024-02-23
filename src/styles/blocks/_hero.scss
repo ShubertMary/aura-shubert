@@ -10,12 +10,11 @@
 }
 
 .hero__title {
+    @include text_title;
     display: block;
     width: 620px;
     margin-bottom: 36px;
-    font-family: $font-title;
     font-size: 70px;
-    line-height: 1.2;
 }
 
 .hero__buttons {
