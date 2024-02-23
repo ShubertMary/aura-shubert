@@ -6,6 +6,7 @@
     @include text_title;
     display: flex;
     align-items: center;
+    margin-bottom: 32px;
 }
 
 .bet__state::before {
@@ -29,4 +30,21 @@
     line-height: 16px;
     border: 2px solid;
     border-radius: 40px;
+}
+
+.bet__content {
+    display: flex;
+}
+
+.bet__product {
+    width: 460px;
+}
+
+.bet__info {
+    margin-left: $gap;
+}
+
+.bet__owner {
+    background-color: $color-gray-light;
+    border-radius: 23px;
 }
