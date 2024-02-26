@@ -1,9 +1,9 @@
-.bet{
+.bet {
     padding-bottom: 0;
 }
 
 .bet__title {
-    @include text_title;
+    @include text--title;
     display: flex;
     align-items: center;
     margin-bottom: 32px;
@@ -41,10 +41,118 @@
 }
 
 .bet__info {
+    flex-grow: 1;
     margin-left: $gap;
 }
 
+.bet__info> :not(:last-child) {
+    margin-bottom: $gap;
+}
+
 .bet__owner {
+    display: inline-flex;
+    align-items: center;
+    padding: 11px 16px;
+    ;
     background-color: $color-gray-light;
     border-radius: 23px;
+}
+
+.bet-owner__avatar {
+    width: 48px;
+    margin-right: 16px;
+}
+
+.bet-owner__nickname {
+    @include text--caption;
+}
+
+.bet-section__subtitle {
+    @include text--caption;
+    font-size: 48px;
+    font-weight: 400;
+}
+
+.bet__props {
+    display: flex;
+}
+
+.bet-current {
+    min-width: 296px;
+    padding: $gap;
+    margin-right: $gap;
+    background-color: $color-gray-light;
+    border-radius: 40px;
+}
+
+.bet__caption {
+    @include text--caption;
+    display: block;
+    margin-bottom: 16px;
+}
+
+.bet__price {
+    @include text--caption;
+    display: block;
+    margin-bottom: 6px;
+    font-size: 48px;
+}
+
+.bet__price-dollars {
+    @include text--caption;
+    display: block;
+    color: $color-gray-dark;
+}
+
+
+.bet-timer {
+    flex-grow: 1;
+    max-width: 460px;
+    padding: $gap;
+    color: $color-light;
+    background-color: $color-dark;
+    border-radius: 40px;
+    background-image: url("../img/alarm-clock.svg");
+    background-position: calc(100% - $gap) center;
+    background-size: 121px 121px;
+    background-repeat: no-repeat;
+}
+
+.bet-timer__caption {
+    @include text--caption;
+    display: block;
+    margin-bottom: 16px;
+}
+
+.bet-timer__part {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bet-timer__part:not(:last-child) {
+    margin-right: 26px;
+}
+
+.bet-timer__part span:first-child {
+    @include text--caption;
+    display: block;
+    margin-bottom: 6px;
+    font-size: 48px;
+}
+
+.bet-timer__part span:last-child {
+    @include text--caption;
+    display: block;
+}
+
+.bet-section__btn {
+    // position: relative;
+    @include text--caption;
+    display: block;
+    padding: 25px 74px;
+    color: $color-dark;
+    background: #46F4DB;
+    border: none;
+    border-radius: 40px;
 }

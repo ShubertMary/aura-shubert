@@ -10,7 +10,7 @@
 }
 
 .hero__title {
-    @include text_title;
+    @include text--title;
     display: block;
     width: 620px;
     margin-bottom: 36px;
