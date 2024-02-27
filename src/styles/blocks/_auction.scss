@@ -1,0 +1,100 @@
+.auction__title {
+    @include text--title;
+    font-size: 20px;
+    margin-bottom: $gap;
+}
+
+.auction__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.auction__item {
+    margin-bottom: $gap;
+    width: calc((100% - $gap * 3) / 4);
+}
+
+.auction__item:not(:nth-child(4n)) {
+    margin-right: $gap;
+}
+
+.auction-product__image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px;
+    background-color: $color-gray-light;
+    border-radius: 40px 40px 0px 0px;
+}
+
+.auction-product__picture {
+    width: 160px;
+}
+
+.auction-product__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+    padding-bottom: 32px;
+    color: $color-light;
+    background-color: $color-dark;
+    border-radius: 0px 0px 40px 40px;
+}
+
+.auction-owner {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.auction-owner__avatar {
+    width: 24px;
+}
+
+.auction-owner__nickname {
+    @include text--caption;
+    margin-left: 8px;
+    font-size: 16px;
+}
+
+.auction-product__title {
+    @include text--caption;
+    margin-bottom: 12px;
+}
+
+.auction-product__price {
+    margin-bottom: 11px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    color: $color-primary;
+}
+
+.auction-product__timer {
+    @include text--caption;
+    font-size: 16px;
+    color: $color-gray-middle;
+}
+
+.auction-more__wrap {
+    text-align: center;
+}
+
+.btn.auction-more {
+    @include text--caption;
+    display: inline-block;
+    padding: 5px;
+    margin: 0 auto;
+    color: $color-dark;
+    text-align: center;
+    background-color: $color-primary;
+    border-radius: 40px;
+}
+
+.auction-more__text {
+    display: block;
+    padding: 20px 75px;
+    border-radius: inherit;
+    background: $color-light;
+}

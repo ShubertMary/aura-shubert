@@ -25,15 +25,13 @@
 
 .hero__btn {
     // position: relative;
+    @include text--caption;
     display: block;
     border-radius: 40px;
     padding: 25px 5px;
     margin-right: $gap;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 20px;
     color: $color-dark;
-    background: linear-gradient(180deg, #46F4DB 27.08%, #57D272 100%);
+    background: linear-gradient(180deg, $color-primary 27.08%, $color-primary-active 100%);
 
 }
 

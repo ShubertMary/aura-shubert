@@ -30,7 +30,7 @@
                         </li>
                     </ul>
                 </nav>
-                <button class="header__btn btn__log-in">Кошелёк</button>
+                <button class="header__btn btn__log-in">Войти</button>
             </div>
 
         </div>
@@ -89,40 +89,53 @@
                 <ul class="auction__list">
                     <li class="auction__item">
                         <article class="auction-product">
-                            <div class="auction-product__image"><img class="auction-product__picture" src="#"
-                                    alt="изображение стикера Alien (green) e_e"></div>
+                            <div class="auction-product__image">
+                                <img class="auction-product__picture" src="./img/Alien.png"
+                                    alt="изображение стикера Alien (green) e_e">
+                            </div>
                             <div class="auction-product__info">
-                                <div class="auction-owner"><img class="auction-owner__avatar" src="img1"
-                                        alt="Аватар пользователя Frank.Nagval"><span
-                                        class="auction-owner__nickname">Frank.Nagval</span>
-                                    <h3 class="auction-product__title">Alien (green) e_e</h3><span
-                                        class="auction-product__price">0.02 ETH</span><span
-                                        class="auction-product__timer">03 часа 25 мин 23 сек</span>
+                                <div class="auction-owner">
+                                    <img class="auction-owner__avatar" src="./img/avatar-2.png"
+                                        alt="Аватар пользователя Frank.Nagval">
+                                    <span class="auction-owner__nickname">Frank.Nagval</span>
                                 </div>
+                                <h3 class="auction-product__title">Alien (green) e_e</h3>
+                                <span class="auction-product__price">0.02 ETH</span>
+                                <span class="auction-product__timer">03 часа 25 мин 23 сек</span>
                             </div>
                         </article>
                     </li>
-                </ul><a class="btn auction-more" href="#" target="_blank"></a><span class="auction-more__text">Все
-                    аукционы</span>
+                </ul>
+                <div class="auction-more__wrap">
+                    <a class="btn auction-more" href="#" target="_blank">
+                        <span class="auction-more__text">Все аукционы</span>
+                    </a>
+                </div>
             </div>
         </section>
         <section class="new">
             <div class="container">
-                <h2 class="new__title"></h2>
+                <h2 class="new__title">Новые стикеры</h2>
                 <div class="new__slider"></div>
-                <div class="new__pagination"></div>
+                <div class="new__pagination">
+                    <span class="swiper-pagination-bullet">1</span>
+                </div>
             </div>
         </section>
         <section class="subscribe">
             <div class="container">
                 <h2 class="subcribe__title">Будь в курсе новинок! Подпишись на рассылку! </h2>
-                <form class="subscribe__form" action="#"><input
-                        class="form-input subscribe-form__input form-input--dark" type="text" placeholder="Имя"
-                        name="name"><input class="form-input subscribe-form__input form-input--dark" type="email"
-                        placeholder="E-mail" name="email"><button class="btn btn--fill subscribe-form__btn"><span
-                            class="btn__text">Подписаться</span></button><label class="checkbox"><input
-                            class="checkbox__input" type="checkbox" name="checkbox" id="#"><span
-                            class="checkbox__text">Согласен на обработку персональных данных</span></label></form>
+                <form class="subscribe__form" action="#">
+                    <input class="form-input subscribe-form__input form-input--dark" type="text" placeholder="Имя" name="name">
+                    <input class="form-input subscribe-form__input form-input--dark" type="email" placeholder="E-mail" name="email">
+                    <button class="btn btn--fill subscribe-form__btn">
+                        <span class="btn__text">Подписаться</span>
+                    </button>
+                    <label class="checkbox">
+                        <input class="checkbox__input" type="checkbox" name="checkbox" id="#">
+                        <span class="checkbox__text">Согласен на обработку персональных данных</span>
+                    </label>
+                </form>
             </div>
         </section>
         <section class="become-author">

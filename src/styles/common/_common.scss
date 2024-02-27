@@ -31,5 +31,15 @@ ul {
     max-width: 1304px;
     margin: 0 auto;
     padding: 0 12px;
-    border: 1px solid red;
+    // border: 1px solid red;
 }
+
+.form-input {
+    display: block;
+    width: 100%;
+    padding: 24px $gap;
+    border: none;
+    border-radius: 40px;
+    font-size: 20px;
+    line-height: 1;
+  }
