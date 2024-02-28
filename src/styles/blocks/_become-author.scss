@@ -1,0 +1,117 @@
+.become-author__wrap {
+    display: flex;
+}
+
+.become-author__info {
+    width: calc(50% - ($gap)/2);
+    margin-right: $gap;
+}
+
+.become-author__title {
+    @include text--title;
+    margin-bottom: 16px;
+}
+
+.become-author__subtitle {
+    @include text--title;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.become-author__text {
+    @include text--paragraph;
+    margin-bottom: 32px;
+}
+
+.become-author__text:last-child {
+    margin-bottom: $gap;
+}
+
+.become-author__decoration {
+    width: 100%;
+}
+
+.become-author__form {
+    display: flex;
+    flex-direction: column;
+    width: calc(50% - ($gap)/2);
+    padding-top: 10px;
+}
+
+.become-author__file {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 342px;
+    padding: 32px;
+    margin-bottom: $gap;
+    color: $color-gray-light;
+    background-color: $color-gray-light;
+    border-radius: 40px;
+
+}
+
+.file__icon {
+    position: relative;
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 16px;
+    background-color: $color-light;
+    border: 2px solid transparent;
+    border-radius: 50%;
+}
+
+.file__icon::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 40px;
+    height: 6px;
+    background-color: currentColor;
+    transform: translate(-50%, -50%);
+}
+
+.file__icon::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 6px;
+    height: 40px;
+    background-color: currentColor;
+    transform: translate(-50%, -50%);
+}
+
+.file__text {
+    @include text--caption;
+    font-weight: 400;
+    color: $color-gray-middle;
+}
+
+.file__input {
+    position: absolute;
+    opacity: 0;
+    appearance: none;
+}
+
+.become-author__input {
+    margin-bottom: 32px;
+    color: $color-gray-dark;
+    background-color: $color-gray-light;
+}
+
+.become-author__btn {
+        @include text--caption;
+        display: block;
+        width: 296px;
+        padding: 25px 0;
+        color: $color-dark;
+        background: $color-primary;
+        border: none;
+        border-radius: 40px;
+    }

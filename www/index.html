@@ -126,8 +126,8 @@
             <div class="container">
                 <h2 class="subcribe__title">Будь в курсе новинок! Подпишись на рассылку! </h2>
                 <form class="subscribe__form" action="#">
-                    <input class="form-input subscribe-form__input form-input--dark" type="text" placeholder="Имя" name="name">
-                    <input class="form-input subscribe-form__input form-input--dark" type="email" placeholder="E-mail" name="email">
+                    <input class="form-input subscribe__input" type="text" placeholder="Имя" name="name">
+                    <input class="form-input subscribe__input" type="email" placeholder="E-mail" name="email">
                     <button class="btn btn--fill subscribe-form__btn">
                         <span class="btn__text">Подписаться</span>
                     </button>
@@ -143,19 +143,26 @@
                 <div class="become-author__wrap">
                     <div class="become-author__info">
                         <h2 class="become-author__title">Стать автором</h2>
-                        <p class="become-author__text">Если ты художник или стремишься им стать — добро пожаловать к
+                        <p class="become-author__subtitle">Если ты художник или стремишься им стать — добро пожаловать к
                             нам!</p>
                         <p class="become-author__text">Отправь нам от трёх до пяти своих работ и напиши свой ник
                             в телеграме. Если наши кураторы решат, что нам по пути, то мы обязательно свяжемся с тобой и
-                            обговорим условия сотрудничества! <b>Удачи!</b></p>
-                        <div class="become-author__decoration"></div>
+                            обговорим условия сотрудничества! <b>Удачи!</b>
+                        </p>
+                        <img class="become-author__decoration" src="./img/author-stickers.png"></img>
                     </div>
-                    <div class="become-author__form"><label class="file become-author__file"><span
-                                class="file__icon"></span><span class="file__text">Прикрепить работы (.jpeg /
-                                .png)</span><input class="file__input" type="file" accept="image/*"></label><input
-                            type="text" placeholder="@telegram_nickname">
-                        <div class="become-author__btn-wrap"><button class="become-author__btn"><span
-                                    class="btn__text">Отправить</span></button></div>
+                    <div class="become-author__form">
+                        <label class="become-author__file">
+                            <span class="file__icon"></span>
+                            <span class="file__text">Прикрепить работы (.jpeg / .png)</span>
+                            <input class="file__input" type="file" accept="image/*">
+                        </label>
+                        <input class="form-input become-author__input" type="text" placeholder="@telegram_nickname">
+                        <div class="become-author__btn-wrap">
+                            <button class="become-author__btn">
+                                <span class="btn__text">Отправить</span>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -163,15 +170,26 @@
         <section class="top">
             <div class="container">
                 <h2 class="top__title">Топ продаж</h2>
-                <ul class="top_list">
+                <ul class="top__list">
                     <li class="top__item">
                         <article class="top-product">
-                            <div class="top-product__image"><img src="" alt=""></div>
+                            <div class="top-product__image">
+                                <img src="./img/Holofobia-1.png" alt="">
+                            </div>
                             <div class="top-product__info">
-                                <div class="top-product__owner"><img class="auction-owner__avatar" src="" alt=""><span
-                                        class="auction-owner__nickname"></span></div>
-                                <h3 class="top-product__title"></h3>
-                                <div class="top-product__price"><span class="top-product__price-dollars"></span></div>
+                                <div class="top-product__info-wrap">
+                                    <div class="top-product__owner">
+                                        <div class="top-product__owner-wrap">
+                                            <img class="auction-owner__avatar" src="./img/avatar-3.png" alt="">
+                                            <span class="auction-owner__nickname">ttgs</span>
+                                        </div>
+                                    </div>
+                                    <h3 class="top-product__title">Holofobia1</h3>
+                                    <div class="top-product__price">
+                                        4.70 ETH
+                                        <span class="top-product__price-dollars">($16,873.47)</span>
+                                    </div>
+                                </div>
                             </div>
                         </article>
                     </li>
@@ -195,15 +213,26 @@
     <footer class="footer">
         <div class="footer-top">
             <div class="container">
-                <div class="footer-top__wrap"> <a class="logo" href=""></a>
+                <div class="footer-top__wrap">
+                    <a class="logo" href="">
+                        <img src="./img/logo-aura.svg" alt="">
+                    </a>
                     <ul class="footer__list">
-                        <li class="footer-item"><a class="footer-link" href=""> </a></li>
-                        <li class="footer-item"><a class="footer-link" href=""> </a></li>
-                        <li class="footer-item"><a class="footer-link" href=""> </a></li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="">Соглашение</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="">Лицензия</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="">FAQ</a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
-        <div class="footer-bottom"><span>AURA<sup>®</sup>2021</span></div>
+        <div class="footer-bottom">
+            <span class="footer__text">AURA® | 2021</span>
+        </div>
     </footer>
 </body>

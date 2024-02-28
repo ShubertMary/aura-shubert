@@ -26,13 +26,13 @@
     max-width: 460px;
 }
 
-.subscribe-form__input {
+.subscribe__input {
     margin-bottom: 16px;
     color: $color-light;
     background-color: $color-dark;
 }
 
-.subscribe-form__input::placeholder {
+.subscribe__input::placeholder {
     color: $color-light;
 }
 

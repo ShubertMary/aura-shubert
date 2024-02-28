@@ -1,0 +1,40 @@
+.footer-top{
+    padding: 20px 0;
+    background-color: $color-primary;
+  }
+  
+  .footer__link {
+    position: relative;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    color: $color-dark;
+  }
+  
+  .footer-top__wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .footer__list {
+    display: flex;
+  }
+  
+  .footer__item:not(:last-child) {
+    margin-right: $gap;
+  }
+  
+  .footer-bottom {
+    padding: 6px 0;
+    text-align: center;
+    color: $color-light;
+    background-color: $color-dark;
+  }
+  
+  .footer__text {
+    @include text--caption;
+    font-weight: 400;
+    font-size: 12px;
+  }
+  
