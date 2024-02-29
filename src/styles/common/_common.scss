@@ -43,7 +43,6 @@ ul {
     position: relative;
     display: block;
     padding: 5px;
-    color: $color-dark;
     border-radius: 40px;
     border-width: 0px;
     outline: none;
@@ -54,7 +53,6 @@ ul {
         display: block;
         padding: 20px 69px;
         border-radius: inherit;
-        transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
     }
 
     &:active {
@@ -65,6 +63,7 @@ ul {
 }
 
 .btn--filled {
+    color: $color-dark;
     background-color: $color-primary;
 
     &:before {
@@ -82,6 +81,7 @@ ul {
         transition: opacity 0.3s;
     }
 
+    &:focus,
     &:hover {
         &:before {
             opacity: 1;
@@ -97,6 +97,7 @@ ul {
 
 
 .btn--gradient {
+    color: $color-dark;
     background-image: $gradient-primary;
     &:before {
         content: "";
@@ -112,6 +113,8 @@ ul {
         opacity: 0;  
         transition: opacity 0.3s ease-in-out, background-color 0.3s ease-in-out;
     }
+
+    &:focus,
     &:hover {
         &:before {
             opacity: 1;
@@ -125,72 +128,6 @@ ul {
     }
 }
 
-
-
-.btn--transparent-dark {
-    span {
-        color: $color-light;
-        background-color: $color-dark;
-    }
-    &:hover {
-        span {
-            color: $color-dark;
-            background-color: inherit;
-            background-image: inherit;
-        }
-    }
-}
-
-.btn--transparent-light {
-    span {
-        color: $color-dark;
-        background-color: $color-light;
-    }
-    &:hover {
-        span {
-            color: $color-dark;
-            background-color: inherit;
-            background-image: inherit;
-        }
-    }
-}
-
-
-
-// .btn::before {
-//     content: "";
-//     position: absolute;
-//     z-index: 1;
-//     left: 0;
-//     right: 0;
-//     top: 0;
-//     bottom: 0;
-//     width: 100%;
-//     height: 100%;
-//     border-radius: inherit;
-//     background: linear-gradient(180deg, $color-primary 27.08%, $color-primary-active 100%);
-//     opacity: 0;
-//     transition: opacity 0.3s ease-in-out;
-//     pointer-events: none;
-// }
-
-// .btn:hover::before {
-//     opacity: 1;
-// }
-
-//   .btn::after {
-//     content: "";
-//     position: absolute;
-//     left: 0;
-//     right: 0;
-//     top: 0;
-//     bottom: 0;
-//     border-radius: inherit;
-//     background-color: $color-primary-active;
-//     opacity: 0;
-//     transition: opacity 0.3s ease-in-out;
-//     pointer-events: none;
-//   }
 
 .btn>span {
     position: relative;
