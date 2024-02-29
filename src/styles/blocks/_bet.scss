@@ -145,14 +145,3 @@
     @include text--caption;
     display: block;
 }
-
-.bet-section__btn {
-    // position: relative;
-    @include text--caption;
-    display: block;
-    padding: 25px 74px;
-    color: $color-dark;
-    background: $color-primary;
-    border: none;
-    border-radius: 40px;
-}

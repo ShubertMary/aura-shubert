@@ -23,24 +23,16 @@
     flex-wrap: wrap;
 }
 
-.hero__btn {
-    // position: relative;
-    @include text--caption;
-    display: block;
-    border-radius: 40px;
-    padding: 25px 5px;
+.hero__btn:first-child {
     margin-right: $gap;
-    color: $color-dark;
-    background: linear-gradient(180deg, $color-primary 27.08%, $color-primary-active 100%);
-
 }
 
-.hero__btn-text{
-    padding: 20px 49px;
+.hero__btn:last-child {
+    background-image: $gradient-primary;
 }
 
-.hero__btn:nth-child(2) > .hero__btn-text{
-    color: $color-light;
-    border-radius: inherit;
-    background: $color-dark;
+
+.hero__btn>span {
+    padding-left: 49px;
+    padding-right: 49px;
 }

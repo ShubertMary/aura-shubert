@@ -100,6 +100,7 @@
 }
 
 .become-author__input {
+    @include form__input;
     margin-bottom: 32px;
     color: $color-gray-dark;
     background-color: $color-gray-light;
@@ -107,11 +108,5 @@
 
 .become-author__btn {
         @include text--caption;
-        display: block;
         width: 296px;
-        padding: 25px 0;
-        color: $color-dark;
-        background: $color-primary;
-        border: none;
-        border-radius: 40px;
     }

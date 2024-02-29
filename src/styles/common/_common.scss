@@ -1,7 +1,12 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+}
+
+*::before,
+*::after {
+    box-sizing: inherit;
 }
 
 body {
@@ -9,20 +14,20 @@ body {
     background-color: $color-light;
 }
 
-section{
+section {
     padding: 90px 0;
 }
-  
+
 img {
     display: block;
     max-width: 100%;
 }
-  
+
 a {
+    color: inherit;
     text-decoration: none;
-    color: $color-dark;
 }
-  
+
 ul {
     list-style: none;
 }
@@ -33,12 +38,161 @@ ul {
     padding: 0 12px;
 }
 
-.form-input {
+.btn {
+    @include text--caption;
+    position: relative;
     display: block;
-    width: 100%;
-    padding: 24px $gap;
-    border: none;
+    padding: 5px;
+    color: $color-dark;
     border-radius: 40px;
-    font-size: 20px;
-    line-height: 1;
-  }
+    border-width: 0px;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+
+    span {
+        display: block;
+        padding: 20px 69px;
+        border-radius: inherit;
+        transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    }
+
+    &:active {
+        transition: none;
+        background-image: none;
+        background-color: $color-primary-active;
+    }
+}
+
+.btn--filled {
+    background-color: $color-primary;
+
+    &:before {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        display: block;
+        height: 100%;
+        width: 100%;
+        background-image: linear-gradient(180deg, $color-primary 27.08%, $color-primary-active 100%);
+        border-radius: inherit;
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+
+    &:hover {
+        &:before {
+            opacity: 1;
+            transition: opacity 0.2s;
+        }
+    }
+    &:active {
+        &:before {
+            opacity: 0;
+        }
+    }
+}
+
+
+.btn--gradient {
+    background-image: $gradient-primary;
+    &:before {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        display: block;
+        height: 100%;
+        width: 100%;
+        background-color: $color-primary;
+        border-radius: inherit;
+        opacity: 0;  
+        transition: opacity 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    }
+    &:hover {
+        &:before {
+            opacity: 1;
+            transition: opacity 0.2s;
+        }
+    }
+    &:active {
+        &:before {
+            opacity: 0;
+        }
+    }
+}
+
+
+
+.btn--transparent-dark {
+    span {
+        color: $color-light;
+        background-color: $color-dark;
+    }
+    &:hover {
+        span {
+            color: $color-dark;
+            background-color: inherit;
+            background-image: inherit;
+        }
+    }
+}
+
+.btn--transparent-light {
+    span {
+        color: $color-dark;
+        background-color: $color-light;
+    }
+    &:hover {
+        span {
+            color: $color-dark;
+            background-color: inherit;
+            background-image: inherit;
+        }
+    }
+}
+
+
+
+// .btn::before {
+//     content: "";
+//     position: absolute;
+//     z-index: 1;
+//     left: 0;
+//     right: 0;
+//     top: 0;
+//     bottom: 0;
+//     width: 100%;
+//     height: 100%;
+//     border-radius: inherit;
+//     background: linear-gradient(180deg, $color-primary 27.08%, $color-primary-active 100%);
+//     opacity: 0;
+//     transition: opacity 0.3s ease-in-out;
+//     pointer-events: none;
+// }
+
+// .btn:hover::before {
+//     opacity: 1;
+// }
+
+//   .btn::after {
+//     content: "";
+//     position: absolute;
+//     left: 0;
+//     right: 0;
+//     top: 0;
+//     bottom: 0;
+//     border-radius: inherit;
+//     background-color: $color-primary-active;
+//     opacity: 0;
+//     transition: opacity 0.3s ease-in-out;
+//     pointer-events: none;
+//   }
+
+.btn>span {
+    position: relative;
+    z-index: 5;
+}

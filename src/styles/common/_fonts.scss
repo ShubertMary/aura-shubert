@@ -1,43 +1,44 @@
-/*Fonts*/
-
 /* russo-one-regular - cyrillic_latin */
 @font-face {
-    font-family: 'Russo One';
-    font-style: normal;
-    font-weight: 400;
-    src: local(''),
-    url('../fonts/russo-one-v16-cyrillic_latin-regular.woff2') format('woff2'), 
+  font-display: swap;
+  font-family: 'Russo One';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+    url('../fonts/russo-one-v16-cyrillic_latin-regular.woff2') format('woff2'),
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-    url('../fonts/russo-one-v16-cyrillic_latin-regular.woff') format('woff'), 
+    url('../fonts/russo-one-v16-cyrillic_latin-regular.woff') format('woff'),
     /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
-    url('../fonts/russo-one-v16-cyrillic_latin-regular.ttf') format('truetype'), 
+    url('../fonts/russo-one-v16-cyrillic_latin-regular.ttf') format('truetype'),
     /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
-  }
+}
 
 /* Muller-regular - cyrillic_latin */
 @font-face {
-    font-family: 'Muller';
-    font-style: normal;
-    font-weight: 400;
-    src: local(''),
-    url('../fonts/MullerRegular.woff2') format('woff2'), 
+  font-display: swap;
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+    url('../fonts/MullerRegular.woff2') format('woff2'),
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-    url('../fonts/MullerRegular.woff') format('woff'), 
+    url('../fonts/MullerRegular.woff') format('woff'),
     /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
-    url('../fonts/MullerRegular.ttf') format('truetype'), 
+    url('../fonts/MullerRegular.ttf') format('truetype'),
     /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
-  }
+}
 
-  /* Muller-bold - cyrillic_latin */
+/* Muller-bold - cyrillic_latin */
 @font-face {
-    font-family: 'Muller';
-    font-style: normal;
-    font-weight: 700;
-    src: local(''),
-    url('../fonts/MullerBold.woff2') format('woff2'), 
+  font-display: swap;
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+    url('../fonts/MullerBold.woff2') format('woff2'),
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-    url('../fonts/MullerBold.woff') format('woff'), 
+    url('../fonts/MullerBold.woff') format('woff'),
     /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
-    url('../fonts/MullerBold.ttf') format('truetype'), 
+    url('../fonts/MullerBold.ttf') format('truetype'),
     /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
-  }
+}

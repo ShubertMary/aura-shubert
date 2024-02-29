@@ -84,12 +84,8 @@
 .auction-more__btn {
     @include text--caption;
     display: inline-block;
-    padding: 5px;
     margin: 0 auto;
-    color: $color-dark;
-    text-align: center;
     background-color: $color-primary;
-    border-radius: 40px;
 }
 
 .auction-more__text {

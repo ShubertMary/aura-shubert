@@ -27,6 +27,7 @@
 }
 
 .subscribe-form__input {
+    @include form__input;
     margin-bottom: 16px;
     color: $color-light;
     background-color: $color-dark;
@@ -38,14 +39,8 @@
 
 .subscribe-form__btn {
     @include text--caption;
-    display: block;
     width: 296px;
-    padding: 25px 0;
     margin-bottom: 16px;
-    color: $color-dark;
-    background: $color-primary;
-    border: none;
-    border-radius: 40px;
 }
 
 .checkbox {
