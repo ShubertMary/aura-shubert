@@ -11,13 +11,18 @@
     color: $color-dark;
   }
   
-  .footer-top__wrap{
+  .footer-top-content{
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
+
+  .footer__logo {
+    height: 40px;
+    width: 100px;
+}
   
-  .footer__list {
+  .footer-list {
     display: flex;
   }
   
@@ -32,7 +37,7 @@
     background-color: $color-dark;
   }
   
-  .footer__text {
+  .footer-bottom__text {
     @include text--caption;
     font-weight: 400;
     font-size: 12px;

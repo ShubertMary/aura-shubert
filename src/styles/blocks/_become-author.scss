@@ -1,8 +1,8 @@
-.become-author__wrap {
+.become-author-content {
     display: flex;
 }
 
-.become-author__info {
+.become-author-info {
     width: calc(50% - ($gap)/2);
     margin-right: $gap;
 }
@@ -32,7 +32,7 @@
     width: 100%;
 }
 
-.become-author__form {
+.become-author-form {
     display: flex;
     flex-direction: column;
     width: calc(50% - ($gap)/2);

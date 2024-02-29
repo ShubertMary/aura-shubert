@@ -1,4 +1,4 @@
-.bet {
+.bet-section {
     padding-bottom: 0;
 }
 
@@ -32,7 +32,7 @@
     border-radius: 40px;
 }
 
-.bet__content {
+.bet-content {
     display: flex;
 }
 
@@ -40,16 +40,16 @@
     width: 460px;
 }
 
-.bet__info {
+.bet-info {
     flex-grow: 1;
     margin-left: $gap;
 }
 
-.bet__info> :not(:last-child) {
+.bet-info> :not(:last-child) {
     margin-bottom: $gap;
 }
 
-.bet__owner {
+.bet-owner {
     display: inline-flex;
     align-items: center;
     padding: 11px 16px;
@@ -73,11 +73,11 @@
     font-weight: 400;
 }
 
-.bet__props {
+.bet-props {
     display: flex;
 }
 
-.bet-current {
+.bet {
     min-width: 296px;
     padding: $gap;
     margin-right: $gap;
@@ -124,24 +124,24 @@
     margin-bottom: 16px;
 }
 
-.bet-timer__part {
+.bet-timer-part {
     display: inline-flex;
     flex-direction: column;
     align-items: center;
 }
 
-.bet-timer__part:not(:last-child) {
+.bet-timer-part:not(:last-child) {
     margin-right: 26px;
 }
 
-.bet-timer__part span:first-child {
+.bet-timer-part span:first-child {
     @include text--caption;
     display: block;
     margin-bottom: 6px;
     font-size: 48px;
 }
 
-.bet-timer__part span:last-child {
+.bet-timer-part span:last-child {
     @include text--caption;
     display: block;
 }

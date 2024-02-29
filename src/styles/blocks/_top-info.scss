@@ -1,11 +1,11 @@
-.top-info {
+.top-info-section {
     padding-top: 0;
     padding-bottom: 0;
     color: $color-light;
     background-color: #37373E;
 }
 
-.top-info>.container {
+.top-info-section>.container {
     padding: $gap 12px;
     background-image: url("../img/top-info-bg.png");
     background-size: 460px;

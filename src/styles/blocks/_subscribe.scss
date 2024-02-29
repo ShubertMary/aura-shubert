@@ -19,20 +19,20 @@
     font-size: 20px;
 }
 
-.subscribe__form {
+.subscribe-form {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     max-width: 460px;
 }
 
-.subscribe__input {
+.subscribe-form__input {
     margin-bottom: 16px;
     color: $color-light;
     background-color: $color-dark;
 }
 
-.subscribe__input::placeholder {
+.subscribe-form__input::placeholder {
     color: $color-light;
 }
 

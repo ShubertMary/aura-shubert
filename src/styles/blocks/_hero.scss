@@ -1,4 +1,4 @@
-.hero {
+.hero-section {
     padding: 160+80px 0 160px 0;
     color: $color-light;
     background-color: $color-dark;
@@ -17,7 +17,7 @@
     font-size: 70px;
 }
 
-.hero__buttons {
+.hero-buttons {
     display: flex;
     align-items: center;
     flex-wrap: wrap;

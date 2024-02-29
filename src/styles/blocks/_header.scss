@@ -1,4 +1,4 @@
-header {
+.header-section {
     position: fixed;
     width: 100%;
     background-color: inherit;
@@ -6,7 +6,7 @@ header {
 }
 
 
-.header-wrap {
+.header-content {
     display: flex;
     align-items: center;
 }
@@ -18,7 +18,7 @@ header {
     margin-right: 64px;
 }
 
-.nav__list {
+.nav-list {
     display: flex;
     align-items: center;
     margin: 0 -16px;

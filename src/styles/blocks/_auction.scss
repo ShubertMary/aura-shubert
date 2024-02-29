@@ -4,7 +4,7 @@
     margin-bottom: $gap;
 }
 
-.auction__list {
+.auction-list {
     display: flex;
     flex-wrap: wrap;
 }
@@ -18,7 +18,7 @@
     margin-right: $gap;
 }
 
-.auction-product__image {
+.auction-product-image {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -31,7 +31,7 @@
     width: 160px;
 }
 
-.auction-product__info {
+.auction-product-info {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -77,11 +77,11 @@
     color: $color-gray-middle;
 }
 
-.auction-more__wrap {
+.auction-more {
     text-align: center;
 }
 
-.btn.auction-more {
+.auction-more__btn {
     @include text--caption;
     display: inline-block;
     padding: 5px;
