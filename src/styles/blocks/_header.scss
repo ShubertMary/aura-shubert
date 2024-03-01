@@ -34,33 +34,34 @@
 .nav__link {
     position: relative;
     transition: color 0.3s ease-in-out;
+}
 
-    &:before {
-        content: "";
-        position: absolute;
-        left: -6px;
-        top: -6px;
-        border: 2px solid $color-primary-active;
-        width: calc(100% + 12px);
-        height: calc(100% + 12px);
-        opacity: 0;
-    }
+.nav__link::before {
+    content: "";
+    position: absolute;
+    left: -6px;
+    top: -6px;
+    border: 2px solid $color-primary-active;
+    width: calc(100% + 12px);
+    height: calc(100% + 12px);
+    opacity: 0;
+}
 
-    &:focus {
-        outline: none;
-        &:before {
-            opacity: 1;
-        }
-    }
+.nav__link:focus {
+    outline: none;
+}
 
-    &:hover {
-        color: $color-primary;
-    }
+.nav__link:focus::before {
+    opacity: 1;
+}
 
-    &:active {
-        transition: none;
-        color: $color-primary-active;
-    }
+.nav__link:hover {
+    color: $color-primary;
+}
+
+.nav__link:active {
+    transition: none;
+    color: $color-primary-active;
 }
 
 .header__btn {
@@ -74,46 +75,51 @@
     font-family: $font;
     font-size: 16px;
     font-weight: 700;
-
-    &:before {
-        content: "";
-        position: absolute;
-        z-index: 101;
-        top: 0;
-        left: 0;
-        display: block;
-        height: 100%;
-        width: 100%;
-        background-color: $color-primary;
-        border-radius: inherit;
-        opacity: 0;
-        transition: opacity 0.3s ease-in-out, background-color 0.3s ease-in-out;
-    }
-
-    &:focus,
-    &:hover {
-        &:before {
-            opacity: 1;
-            transition: opacity 0.2s;
-        }
-
-        span {
-            color: $color-dark;
-        }
-    }
-
-    &:active {
-        &:before {
-            opacity: 0;
-        }
-
-        span {
-            color: $color-dark;
-        }
-    }
 }
 
-.header__btn>span {
+.header__btn::before {
+    content: "";
+    position: absolute;
+    z-index: 101;
+    top: 0;
+    left: 0;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-color: $color-primary;
+    border-radius: inherit;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.header__btn:focus span {
+    color: $color-dark;
+}
+
+.header__btn:focus::before {
+    opacity: 1;
+    transition: opacity 0.2s;
+}
+
+.header__btn:hover span {
+    
+    color: $color-dark;
+}
+
+.header__btn:hover::before {
+    opacity: 1;
+    transition: opacity 0.2s;
+}
+
+.header__btn:active span {
+    color: $color-dark;
+}
+
+.header__btn:active::before {
+    opacity: 0;
+}
+
+.header__btn span {
     position: relative;
     z-index: 105;
     padding: 0;

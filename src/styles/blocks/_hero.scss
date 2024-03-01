@@ -27,49 +27,47 @@
     margin-right: $gap;
 }
 
-.hero__btn--transparent {
-    background-image: $gradient-primary;
-    span {
-        background-color: $color-dark;
-        transition: background-color 0.3s ease-in-out, background-image 0.3s ease-in-out, color 0.3s ease-in-out;
-    }
-
-    &:before {
-        content: "";
-        position: absolute;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        display: block;
-        height: 100%;
-        width: 100%;
-        background-color: $color-primary-active;
-        border-radius: inherit;
-        opacity: 0;
-        transition: opacity 0.3s ease-in-out;
-    }
-    
-    &:focus,
-    &:hover {
-        span {
-            color: $color-dark;
-            background-color: transparent;
-        }
-    &:active {
-        &:before {
-            opacity: 1;
-        }
-        span {
-            color: $color-dark;
-            background-color: none;
-            background-image: none;
-        }
-    }
-    }
-}
-
-
-.hero__btn>span {
+.hero__btn span {
     padding-left: 49px;
     padding-right: 49px;
+}
+
+.hero__btn--transparent {
+    background-image: $gradient-primary;
+}
+
+.hero__btn--transparent span {
+    background-color: $color-dark;
+    transition: background-color 0.3s ease-in-out, background-image 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.hero__btn--transparent::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-color: $color-primary-active;
+    border-radius: inherit;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.hero__btn--transparent:focus span,
+.hero__btn--transparent:hover span {
+    color: $color-dark;
+    background-color: transparent;
+}
+
+.hero__btn--transparent:active::before {
+    opacity: 1;
+}
+
+.hero__btn--transparent:active span {
+    color: $color-dark;
+    background-color: none;
+    background-image: none;
 }
