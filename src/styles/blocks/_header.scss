@@ -1,6 +1,6 @@
 .header-section {
     position: fixed;
-    z-index: 100;
+    z-index: $header-z;
     width: 100%;
     background-color: inherit;
     padding: 15px 0;
@@ -80,7 +80,7 @@
 .header__btn::before {
     content: "";
     position: absolute;
-    z-index: 101;
+    z-index: calc($header-z + 1);
     top: 0;
     left: 0;
     display: block;
@@ -121,7 +121,7 @@
 
 .header__btn span {
     position: relative;
-    z-index: 105;
+    z-index: calc($header-z + 5);
     padding: 0;
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
